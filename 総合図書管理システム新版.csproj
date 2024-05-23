@@ -1,0 +1,115 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <ApplicationIcon>図書管理システムv1.ico</ApplicationIcon>
+    <Title>総合図書管理システム</Title>
+    <Version>1.0.0</Version>
+    <Company>TOKI corporation</Company>
+    <Copyright>Copyright ©  2022 TOKI corporation</Copyright>
+    <PackageId>toshokanrisystem</PackageId>
+    <Description>個人などの小規模から学校などの大規模運用まで図書管理を支援するプログラム</Description>
+    <Authors>TOKI corporation</Authors>
+    <SignAssembly>False</SignAssembly>
+    <Product>総合図書管理システム</Product>
+    <AssemblyName>総合図書管理システム</AssemblyName>
+    <DelaySign>False</DelaySign>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <GenerateAssemblyInfo>True</GenerateAssemblyInfo>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>embedded</DebugType>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <GenerateAssemblyInfo>True</GenerateAssemblyInfo>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>embedded</DebugType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="ca.crt" />
+    <None Remove="codeica.crt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="ca.crt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="図書管理システムv1.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ScottPlot.WinForms" Version="4.1.69" />
+    <PackageReference Include="ZXing.Net" Version="0.16.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="codeica.crt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="13user.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="14useradd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="17barcodeprint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="18userbarcode.cs" />
+    <Compile Update="20userremove.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="19bookremove.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="23icid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="22statistics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Properties\Settings.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="server.pfx">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="tosho.pfx">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

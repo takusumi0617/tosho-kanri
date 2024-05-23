@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_LastSelectedProfileId>C:\Users\takus\OneDrive\プログラム\総合図書管理システム\総合図書管理システム新版\Properties\PublishProfiles\3.CD-ローカル.pubxml</_LastSelectedProfileId>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Update="00about.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="01login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="02Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="03search.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="04message.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="05settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="06inquiry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="07reserve.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="08collection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="09collectionadd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="10dataview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="11referenceonly.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="12password.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="15additionalsettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="16reminder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="18userbarcode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="21setup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="24inspection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="00about.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Update="01login.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Update="02Menu.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Update="03search.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Update="04message.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Update="05settings.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Update="06inquiry.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Update="07reserve.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Update="08collection.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Update="09collectionadd.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>
